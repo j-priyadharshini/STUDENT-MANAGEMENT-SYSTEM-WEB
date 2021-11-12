@@ -1,0 +1,45 @@
+{% include "layout.html" %}
+
+{% include "l.html" %}
+
+{% block body %}
+    <div class="jumbotron">
+        <h1>Delete student!</h1></div>
+    <div class="text-center">
+    <form action="/del_std" method="POST">
+    
+    <h4> ROLL NO</h4>
+    <input name="rollno" id="r" type="text"   autocomplete = "off" placeholder="Enter his/her roll_no"/>
+    <h4> STUDENT NAME</h4>
+    <input name="name" id="n" type="text"   autocomplete = "off" placeholder="Enter student name"/>
+    </br></br>
+    <input name="flag" id="f" type="hidden" value="False">
+    <!-- <input type="button" value="DELETE" onclick =  "submit_form()"/> -->
+
+    <input type="submit" value="DELETE"/>
+    </form>
+    </div>
+<script>
+    function submit_form()
+    {
+        let n = document.getElementById("n").value;
+        console.log(n)
+        let r = document.getElementById("r").value;
+        let f = document.getElementById("f").value;
+        console.log(r)
+        console.log(f)
+        console.log("hi");
+        if(!n || !r)
+        {
+        console.log("no")
+        alert("Enter all details correctly");
+        }
+        else
+        {
+        document.getElementById("f").value = "True";
+        console.log("yes")
+        alert("Deleted successfully");
+        }
+    }
+</script>
+{% endblock %}

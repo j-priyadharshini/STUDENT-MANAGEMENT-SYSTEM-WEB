@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  /*position: relative;*/
+  /*border-style: inset;*/
+  display : block;
+  border-left: 1px solid rgb(7, 229, 245);
+}
+/*li:last-child {*/
+/*  border-right: 1px solid rgb(7, 229, 245);;*/
+/*}*/
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ }
+
+li a:hover:not(.active) {
+  background-color: blue;
+  color:white;
+  text-decoration: none;
+}
+.active {
+  background-color: darkblue;
+  color:white;
+  text-decoration: none;
+}
+
+li a:hover:active{
+  background-color: orange;
+  color:white;
+  text-decoration: none;
+
+}
+
+li a ul:active{
+  background-color: darkgreen ;
+  text-decoration: none;
+  color: black
+}
+
+li a[tabindex]:focus {
+  background-color:blue;
+    /* outline: none; */
+}
+
+li ul{
+  display: none;
+  position: absolute;
+}
+
+li:hover ul
+{
+  display : block;
+  background-color: black;
+  color: white;
+  height:auto;
+
+}
+li ul li{
+  clear:none;
+  border: 1pt;
+  float: inherit;
+}
+/*body*/
+/*{*/
+/*  background-image: url("static/aa.jpg");*/
+/*  background-size: cover;*/
+/*  background-repeat: no-repeat;*/
+/*}*/
+</style>
+</head>
+<body>
+
+<ul>
+   <!--<li><a class="active" href="{{ url_for('go_to_home') }}">Home</a></li> -->
+  <li><a href="{{ url_for('go_to_home')}}"  class="active"  tabindex="1">Home</a></li>
+
+  <li><a href="#" tabindex="2">Master</a>
+  <ul>
+  <li><a href = "{{ url_for('get_std_details') }}">Student details</a></li>
+  <li><a href = "{{ url_for('modify_std_details') }}">Modify Student details</a></li>
+  </ul>
+  </li>
+
+  <li><a href="#" tabindex="3">Administrator</a>
+  <ul>
+  <li><a href = "{{ url_for('get_user_details') }}">User details</a></li>
+
+  </ul>
+  </li>
+
+</ul>
+
+</body>
+</html>

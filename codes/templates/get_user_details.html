@@ -1,0 +1,33 @@
+{% include "layout.html" %}
+
+{% include "l.html" %}
+{% block body %}
+    <div class="jumbotron">
+        <h1>User Details!</h1>
+    </div>
+    <div>
+
+        <table>
+            <thead>
+                <th>USER ID</th>
+                <th>USERNAME</th>
+                <th>CITY</th>
+                <th>EMAIL</th>
+            </thead>
+
+            <TBODY>
+                {% for row in rows %}
+                <tr>
+                    <td>{{row.user_id}}</td>
+                    <td>{{row.username}}</td>
+                    <td>{{row.city}}</td>
+                    <td>{{row.email}}</td>
+
+                </tr>
+                {% endfor %}
+               </TBODY>
+        </table>
+
+
+    </div>
+{% endblock %}

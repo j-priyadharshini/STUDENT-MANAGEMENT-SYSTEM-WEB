@@ -1,0 +1,21 @@
+{% include  "layout.html" %}
+
+{% include  "l.html" %}
+
+
+
+{% block body %}
+    <div class="jumbotron">
+        <h1>Master Details!</h1>
+    </div>
+    <div>
+        <form action="/get_std_details" method="get">
+            <div class="container">
+            <div class="center">
+                <button class="btn btn-primary align" type="submit">view student details</button>
+            </div>
+            </div>
+
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% include "layout.html" %}
+
+{% include "l.html" %}
+
+{% block body %}
+    <div class="jumbotron">
+        <h1>Update student Details!</h1>
+    <div class="text-center">
+    <form action="/update_std" method="POST">
+   
+    <h4> ROLL NO</h4>
+    <!-- <select name="rollno">
+        <option disabled selected value="">ROLL NO</option>
+        {% for row in rows %}
+            <option value=" {{row}} ">{{row}}</option>
+        {% endfor %}
+    </select> -->
+    <input name="rollno" id="rn" type="text"  autocomplete = "off" placeholder="Enter his/her roll_no"/>
+    <h4> STUDENT NAME</h4>
+    <input name="name" type="text"   autocomplete = "off" placeholder="Enter student name"/>
+    <h4> CITY</h4>
+    <input name="city" type="text"   autocomplete = "off" placeholder="Enter his/her city"/>
+    <h4> DOB</h4>
+    <input name="dob" type="text"   autocomplete = "off" placeholder="Enter DOB"/></br></br>
+    <input type="button" value="UPDATE" onclick = "submit_form()"/>
+    <input type="submit" value="EXIT"/>
+    </form>
+    </div>
+<script>
+    function submit_form()
+    {
+        let rn = document.getElementById("rn").value;
+        // console.log(rn)
+        if(!rn)
+        {console.log("no")
+        alert("Enter a roll number");
+    }
+        else
+        {console.log("yei")
+        alert("Updated successfully");
+        }
+    }
+</script>
+{% endblock %}

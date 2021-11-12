@@ -1,0 +1,45 @@
+{% include  "layout.html" %}
+
+{% include  "l.html" %}
+
+
+
+{% block body %}
+    <div class="jumbotron">
+        <h1>Master Details!</h1>
+    </div>
+    <div class="text-center">
+        <!--<form  class="text-center" action="/modify_std_details" method="post" >-->
+            <div>
+                <button id="add" style="margin:5px;" class="btn btn-primary align" onclick=add_std()>ADD STUDENT</button>
+            </div>
+             <div>
+                <button id="update" style="margin:5px;" class="btn btn-primary align" onclick=update_std()>UPDATE STUDENT</button>
+            </div>
+            <div>
+                <button id="delete" style="margin:5px;" class="btn btn-primary align" onclick=delete_std()>DELETE STUDENT</button>
+            </div>
+            <div>
+                <button style="margin:5px;" class="btn btn-secondary align" onclick=end()>Quit</button>
+            </div>
+        <!--</form>-->
+    </div>
+    <script>
+        function add_std()
+        {
+            window.location = "add_std";
+        }
+        function delete_std()
+        {
+            window.location = "del_std";
+        }
+        function update_std()
+        {
+            window.location = "update_std";
+        }
+        function end()
+        {
+            window.location = "p";
+        }
+    </script>
+{% endblock %}

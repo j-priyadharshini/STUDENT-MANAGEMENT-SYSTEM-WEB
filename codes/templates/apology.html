@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+        <form action="{{ goto }}" method="get">
+
+            <div >
+                    <button class="btn btn-primary align" style= "text-align: right" type="submit">BACK</button>
+            </div>
+        <div class="container">
+            <!-- <div style="background-image: url('static/bb.jpg'); height: 100%; width: 100%"> -->
+                <div> {{msg}} </div>
+        </div>
+        <div> {{msg}} </div>
+        </div>
+
+          <!--<img src="static/b.jpg" alt="Snow" style="width:auto;">-->
+
+
+        </form>
+
+
+    <!-- {{msg}} -->
+    <!-- <img alt="{{ top }}" class="border" src="https://api.memegen.link/images/custom/%7B%7B_top_%7C_urlencode_%7D%7D/%7B%7B_bottom_%7C_urlencode_%7D%7D.jpg?alt=https://imgur.com/t/butterfly/c7BCNZ2.png" title="{{ top }}"> -->
+    <!--<img alt="{{ top }}" class="border" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://i.imgur.com/cat.png" title="{{ top }}">-->
+{% endblock %}

@@ -1,0 +1,49 @@
+{% include "layout.html" %}
+
+{% include "l.html" %}
+
+{% block body %}
+    <div class="jumbotron">
+        <h1>Add student Details!</h1>
+        </div>
+    <div class="text-center">
+    <form action="/add_std" method="POST">
+    <h4> STUDENT NAME</h4>
+    <input name="name" id="n" type="text"   autocomplete = "off" placeholder="Enter student name"/>
+    <h4> CITY</h4>
+    <input name="city" id="c" type="text"  autocomplete = "off"  placeholder="Enter his/her city"/>
+    <h4> DOB</h4>
+    <input name="dob" id="d" type="text"   autocomplete = "off" placeholder="Enter DOB"/></br></br>
+    <input name="flag" id="f" type="hidden" value="False">
+    <input type="button" value="ADD" onclick =  "submit_form()"/>
+    <input type="submit" value="EXIT"/>
+    </form>
+    </div>
+<script>
+   function submit_form()
+    {
+        let n = document.getElementById("n").value;
+        let c = document.getElementById("c").value;
+        let d = document.getElementById("d").value;
+        console.log("hi");
+        if(!n || !c || !d)
+        {
+        console.log("no")
+        document.getElementById("f").value = "False";
+        console.log(document.getElementById("f").value)
+        alert("Enter all details");
+        }
+        else
+        {
+        console.log("yes")
+        document.getElementById("f").value = "True";
+        console.log(document.getElementById("f").value)
+        alert("Added successfully");
+        }
+    }
+    // function finish()
+    // {
+    //     window.location = "p.html"
+    // }
+</script>
+{% endblock %}

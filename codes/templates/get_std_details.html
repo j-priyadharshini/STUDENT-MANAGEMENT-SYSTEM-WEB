@@ -1,0 +1,34 @@
+{% include "layout.html" %}
+
+{% include "l.html" %}
+{% block body %}
+    <div class="jumbotron">
+        <h1>Student Details!</h1>
+    </div>
+    <div >
+
+        <table>
+            <thead>
+                <th>ROLL NUMBER</th>
+                <th>NAME</th>
+                <th>CITY</th>
+                <th>DOB</th>
+
+            </thead>
+
+            <TBODY>
+                {% for row in rows %}
+                <tr>
+                    <td>{{row.roll_no}}</td>
+                    <td>{{row.name}}</td>
+                    <td>{{row.city}}</td>
+                    <td>{{row.DOB}}</td>
+
+                </tr>
+                {% endfor %}
+               </TBODY>
+        </table>
+
+
+    </div>
+{% endblock %}

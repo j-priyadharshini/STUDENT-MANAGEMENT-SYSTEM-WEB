@@ -1,0 +1,27 @@
+{% include "layout.html" %}
+
+{% include "l.html" %}
+
+{% block body %}
+<div class="jumbotron">
+    <h1>Login!</h1>
+</div>
+<form action="{{ admin }}" method="post">
+    <div class="container">
+    <DIV CLASS="center">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="adminname" placeholder="Admin_UserName" type="text">
+    </div>
+    <div class="form-group">
+        <input class="form-control" name="password" placeholder="Password" type="password">
+    </div>
+    <div>
+        <button class="btn btn-primary align" type="submit">Log In</button>
+    </div>
+    </DIV>
+    </div>
+
+
+
+</form>
+{% endblock %}
