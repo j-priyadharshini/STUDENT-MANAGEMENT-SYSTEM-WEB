@@ -11,15 +11,15 @@
 
 
 #### Technologies I have used - 
-            -python
-            -mysql
-            -flask
+            - python
+            - mysql
+            - flask
 
 #### Walkthrough through my code
 
-  This is a simple web application where there are two users-
-  -Admin
-  -User
+  This is a simple web application where there are two users
+  - Admin
+  - User
   
   
   Both of them have to login to use the SMS system.
@@ -41,9 +41,9 @@ In my database I have created 2 tables to store all the user and student details
 
 
 I have created navigation bar which contains the following tabs-
-  -Home
-  -Master
-  -Administrator
+  - Home
+  - Master
+  - Administrator
 
 
 
