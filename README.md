@@ -1,4 +1,4 @@
-#                "STUDENT MANAGEMENT SYSTEM"
+#       STUDENT MANAGEMENT SYSTEM
 
 ##  Video Demo:
             https://youtu.be/Bfc1LK71oDk
@@ -10,10 +10,10 @@
              For DBMS, I used PHP database.
 
 
-#### Technologies I have used - 
-            - python
-            - mysql
-            - flask
+#### Technologies I have used 
+- python
+- mysql
+- flask
 
 #### Walkthrough through my code
 
