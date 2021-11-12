@@ -5,23 +5,23 @@
 
 
 ### Description:
+  I did a simple web application for viewing and editing student details and user details  for my CS50x final project.
+             I have used HTML,CSS for UI creation and python language with backend framework 'flask'.
+             For DBMS, I used PHP database.
 
-#### Technologies I have used-
 
- I did a simple web application for viewing and editing student details and user details  for my CS50x final project.
- I have used HTML,CSS for UI creation and python language with backend framework 'flask'.
- For DBMS, I used PHP database.
-
+#### Technologies I have used - 
+            -python
+            -mysql
+            -flask
 
 #### Walkthrough through my code
 
   This is a simple web application where there are two users-
-
-
-  *Admin
-
-
-   *User
+  -Admin
+  -User
+  
+  
   Both of them have to login to use the SMS system.
 
 
@@ -39,10 +39,11 @@
 
 In my database I have created 2 tables to store all the user and student details including the user password.
 
+
 I have created navigation bar which contains the following tabs-
-  * Home
-  * Master
-  * Administrator
+  -Home
+  -Master
+  -Administrator
 
 
 
