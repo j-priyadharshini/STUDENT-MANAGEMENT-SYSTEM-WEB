@@ -1,8 +1,5 @@
 #       STUDENT MANAGEMENT SYSTEM
 
-##  Video Demo:
-            https://youtu.be/Bfc1LK71oDk
-
 
 ### Description:
   I did a simple web application for viewing and editing student details and user details.
