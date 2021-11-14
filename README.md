@@ -5,7 +5,7 @@
 
 
 ### Description:
-  I did a simple web application for viewing and editing student details and user details  for my CS50x final project.
+  I did a simple web application for viewing and editing student details and user details.
              I have used HTML,CSS for UI creation and python language with backend framework 'flask'.
              For DBMS, I used PHP database.
 
